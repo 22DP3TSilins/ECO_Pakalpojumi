@@ -8,6 +8,7 @@
         :title="product.title"
         :description="product.description"
         :image="product.image"
+        :fullDescription="product.fullDescription"
       />
     </transition-group>
   </div>
@@ -25,23 +26,27 @@ export default {
       products: [
         { 
           title: "Eco Soap", 
-          description: "Made with 100% natural ingredients", 
-          image: "/src/assets/products/soap.jpg" 
+          description: "Made with natural ingredients", 
+          image: "/src/assets/products/soap.jpg",
+          fullDescription: "Our Eco Soap is handcrafted with 100% organic ingredients, safe for all skin types and environmentally friendly."
         },
         { 
           title: "Reusable Bottle", 
-          description: "Stainless steel, eco-friendly", 
-          image: "/src/assets/products/bottle.jpg" 
+          description: "Eco-friendly stainless steel", 
+          image: "/src/assets/products/bottle.jpg",
+          fullDescription: "Our Reusable Bottle keeps your drinks cold or hot for hours and reduces plastic waste. Join the eco revolution!"
         },
         { 
           title: "Bamboo Toothbrush", 
           description: "Sustainable and biodegradable", 
-          image: "/src/assets/products/toothbrush.jpg" 
+          image: "/src/assets/products/toothbrush.jpg",
+          fullDescription: "Our Bamboo Toothbrush is a sustainable alternative to plastic. Natural, biodegradable and great for your smile!"
         },
         { 
           title: "Organic Cotton Bag", 
           description: "Say no to plastic bags", 
-          image: "/src/assets/products/bag.jpg" 
+          image: "/src/assets/products/bag.jpg",
+          fullDescription: "Carry your groceries or essentials in style with our Organic Cotton Bag. Durable, washable, and eco-friendly."
         },
       ]
     }
@@ -61,13 +66,5 @@ export default {
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
-}
-
-/* Fade animation */
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
 }
 </style>
